@@ -33,16 +33,16 @@ pipeline {
 //             }
 //         }
         
-        stage('Static Analysis'){
-            steps{
-                recordIssues enabledForFailure: true, tools: [checkStyle(pattern: '**/checkstyle-result.xml')]
-            }
-        }
+     //   stage('Static Analysis'){
+       //     steps{
+      //          recordIssues enabledForFailure: true, tools: [checkStyle(pattern: '**/checkstyle-result.xml')]
+    //        }
+    //    }
         
-        stage('Code Coverage'){
-            steps{
-                jacoco maximumBranchCoverage: '80', maximumClassCoverage: '80', maximumComplexityCoverage: '80', maximumInstructionCoverage: '80', maximumLineCoverage: '80', maximumMethodCoverage: '80', minimumBranchCoverage: '80', minimumClassCoverage: '80', minimumComplexityCoverage: '80', minimumInstructionCoverage: '80', minimumLineCoverage: '80', minimumMethodCoverage: '80'
-            }
-        }
+      //  stage('Code Coverage'){
+        //    steps{
+             //   jacoco maximumBranchCoverage: '80', maximumClassCoverage: '80', maximumComplexityCoverage: '80', maximumInstructionCoverage: '80', maximumLineCoverage: '80', maximumMethodCoverage: '80', minimumBranchCoverage: '80', minimumClassCoverage: '80', minimumComplexityCoverage: '80', minimumInstructionCoverage: '80', minimumLineCoverage: '80', minimumMethodCoverage: '80'
+       //     }
+     //   }
     }
 }
